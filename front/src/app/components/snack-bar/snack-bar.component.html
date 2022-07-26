@@ -1,0 +1,17 @@
+
+<div class="mat-snack-bar-container" *ngIf="show">
+  <div class="snackbar-icon">
+    <mat-icon class="snackbar-icon-success" *ngIf="type == 'success'">check_circle_outline</mat-icon>
+    <mat-icon class="snackbar-icon-info" *ngIf="type == 'info'">info_outline</mat-icon>
+    <mat-icon class="snackbar-icon-warning" *ngIf="type == 'warning'">error_outline</mat-icon>
+    <mat-icon class="snackbar-icon-error" *ngIf="type == 'error'">highlight_off</mat-icon>
+  </div>
+
+  <div class="snackbar-text">
+      {{ message }}
+  </div>
+
+  <button mat-icon-button color="accent" class="snackbar-btn" (click)="closeSnackBar()">
+      <mat-icon class="snackbar-text-icon">clear</mat-icon>
+  </button>
+</div>

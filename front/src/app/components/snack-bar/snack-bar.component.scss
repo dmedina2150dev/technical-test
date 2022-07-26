@@ -1,0 +1,48 @@
+.mat-snack-bar-container {
+  width: 300px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6d6c6c;
+  background: #ccc;
+
+  .snackbar-icon {
+    width: 35px;
+
+    .snackbar-icon-success,
+    .snackbar-icon-info,
+    .snackbar-icon-warning,
+    .snackbar-icon-error {
+      font-size: 35px;
+    }
+
+    ::ng-deep .mat-icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .snackbar-text {
+    font-size: 16px;
+  }
+}
+
+.snackbar-icon-success {
+  color: #99cc33;
+}
+
+.snackbar-icon-info {
+  color: #2d34ce;
+}
+
+.snackbar-icon-warning {
+  color: #ff9600;
+}
+
+.snackbar-icon-error {
+  color: #bc022f;
+}
